@@ -19,8 +19,15 @@ header {
     text-align: center;
 }
 
-header h1 {
-    margin-bottom: 0.5rem;
+header img {
+    max-width: 100%;
+    height: auto;
+    width: 40%; /* Adjust this value as needed */
+}
+
+header p {
+    margin-top: 1rem;
+    color: #fff;
 }
 
 main {
