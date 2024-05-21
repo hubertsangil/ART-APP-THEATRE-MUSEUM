@@ -64,3 +64,38 @@ footer {
     color: #fff;
     margin-top: 2rem;
 }
+
+/* Add animation classes */
+.animate-slide-up {
+    animation: slide-up 0.5s ease forwards;
+}
+
+.animate-fade-in {
+    animation: fade-in 0.5s ease forwards;
+}
+
+@keyframes slide-left {
+    from {
+        transform: translateX(-50px); /* Start position */
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0); /* End position */
+        opacity: 1;
+    }
+}
+
+.animate-slide-left {
+    animation: slide-left 0.5s ease forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0; /* Start opacity */
+    }
+    to {
+        opacity: 1; /* End opacity */
+    }
+}
+
+
