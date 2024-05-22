@@ -182,8 +182,10 @@ nav ul li a:hover {
     font-size: 1.2em;
     color: #ffffff;
     line-height: 1.6;
+    margin-bottom: 100px;
 }
 
 h1 img {
     max-width: 100%;
 }
+
