@@ -178,7 +178,7 @@ nav ul li a:hover {
     text-align: center;
     padding: 20px;
     margin: 0 auto 20px auto; /* Center the section horizontally */
-    max-width: 60%;  /* Set a maximum width */
+    max-width: 50%;  /* Set a maximum width */
 }
 
 #intro-text p {
@@ -205,6 +205,7 @@ h1 img {
 .image-card {
     position: relative;
     width: 300px;
+    height: 300px; /* Set fixed height */
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -215,6 +216,8 @@ h1 img {
 
 .image-card img {
     width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
     display: block;
     transition: transform 0.3s;
 }
@@ -245,5 +248,31 @@ h1 img {
 .text-overlay p {
     margin: 0;
     font-size: 14px;
+}
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: #ffffff;
+    color: black;
+    cursor: pointer;
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    border-radius: 50%; /* Make it circular */
+    font-size: 24px; /* Increase font size */
+    border: none;
+    outline: none;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #555;
+}
+
+/* Add an arrow-up icon inside the button */
+#scrollToTopBtn::before {
+    content: '\2191'; /* Unicode for up arrow */
 }
 
