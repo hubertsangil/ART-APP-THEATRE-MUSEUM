@@ -172,21 +172,25 @@ nav ul li a:hover {
 }
 
 #intro-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     padding: 20px;
-    margin: 20px auto; /* Center the section horizontally */
-    max-width: 800px;  /* Set a maximum width */
+    margin: 0 auto 20px auto; /* Center the section horizontally */
+    max-width: 60%;  /* Set a maximum width */
 }
 
 #intro-text p {
     font-size: 1.2em;
     color: #ffffff;
     line-height: 1.6;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
 
 h1 img {
-    max-width: 100%;
+    max-width: 80%;
+    height: auto;
 }
 
 .container {
@@ -242,3 +246,4 @@ h1 img {
     margin: 0;
     font-size: 14px;
 }
+
